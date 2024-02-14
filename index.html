@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <div class="iconoPrincipal">
+            <img class="imagen1" src="/img/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+
+    <main class="contenedorMain">
+        <div class="contenedorPrincipal">
+            
+            <div class="contenedorEntrada">
+                <form class="formularioingresoTexto">
+                    <textarea id="textoFormulario" class="ingresoTexto" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="textoAclaracion">
+                        <img class="logoExclamacion" src="/img/exclamacion.svg" alt="icono exclamacion">
+                        <p>Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                    <div class="botones">
+                        <button id="encriptar" class="boton1" type="submit">Encriptar</button>
+                        <button id="desencriptar" class="boton2" type="submit">Desencriptar</button> 
+                    </div>
+                    <br>
+                </form>
+            </div>
+            <div class="contenedorSalida">
+                <div id="textoResultado">
+                    <img class="imagenMuñeco" src="/img/Muñeco.png" alt="muñeco">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    
+                    
+                </div>
+                <div class="botonCopiar">
+                    <button id="botonCopy" onclick="copiarTexto();" class="boton3" type="submit">Copiar</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedorFooter">
+            <div class="logosFooter">
+                <a href="https://github.com/rod662" target="_blank"><img src="/img/github.svg" alt="logo de github"></a>
+                <a href="https://www.linkedin.com/in/rodrigo-gomez-59a1a5291/" target="_blank"><img src="/img/linkedin.svg" alt="logo de linkedin"></a>
+            </div>
+            <div class="textoFooter">
+                <p>&copy; Rodrigo Alveiro Gómez Rincón | 2024</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

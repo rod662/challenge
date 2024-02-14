@@ -1,0 +1,180 @@
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(216, 223, 224);
+    
+}
+
+
+
+
+.contenedorPrincipal {
+    max-width: 140rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.contenedorEntrada {
+ flex-basis: 40%;
+}
+
+.textoAclaracion {
+    display: flex;
+    gap: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.boton1 {
+    background-color: rgb(5, 11, 99);
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.boton2 {
+    background-color: rgb(164, 196, 206);
+    color: rgb(7, 7, 85);
+    width: 15rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.contenedorSalida {
+    flex-basis: 20%;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    word-break: break-all;
+    padding: 1rem;
+}
+
+
+.boton3 {
+    background-color: white;
+    color: rgb(7, 7, 85);
+    width: 15rem;
+    height: 3rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.iconoPrincipal {
+    margin-top: 2rem;
+}
+
+textarea {
+    margin-top: 5rem;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    min-height: 30rem;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(53, 62, 140);
+}
+
+.ingresoTexto {
+    font-size: 3rem;
+    color: rgb(53, 62, 140);
+}
+
+.contenedorFooter {
+    background-color: rgb(184, 186, 196);
+    color: white;
+    text-align: center;
+    margin-top: 8rem;
+    padding: 2rem;
+    
+    width: 100%;
+}
+
+.textoFooter p {
+    color: rgb(7, 7, 85);
+}
+
+/* media queries */
+
+
+@media (max-width: 480px), (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: auto;
+    }
+
+    .contenedorPrincipal {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedorEntrada,
+    .contenedorSalida {
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .ingresoTexto {
+        margin-top: 1rem;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagenMuñeco {
+        display: none;
+    }
+
+    .botones {
+        display: grid;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 480px) {
+
+    .botones {
+        display: flex;
+    }
+        
+}
